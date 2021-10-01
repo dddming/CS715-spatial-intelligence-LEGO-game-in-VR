@@ -21,6 +21,7 @@ public class HandPresence : MonoBehaviour
 
         List<InputDevice> devices = new List<InputDevice>();
         //InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+/*
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
 
         foreach (var item in devices)
@@ -43,13 +44,14 @@ public class HandPresence : MonoBehaviour
 
             spawnedHandModel = Instantiate(handModelPrefab, transform);
         }
+*/
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+/*
 
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
         if (primaryButtonValue)
@@ -74,6 +76,7 @@ public class HandPresence : MonoBehaviour
             spawnedHandModel.SetActive(true);
             spawnedController.SetActive(false);
         }
+*/
 
     }
 }
