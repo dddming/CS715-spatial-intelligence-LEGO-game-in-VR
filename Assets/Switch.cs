@@ -34,6 +34,8 @@ public class Switch : MonoBehaviour
             levelthree.SetActive(false);
             var levelfour = Find("Task4");
             levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
 
         }
         if (index == 3)
@@ -69,6 +71,8 @@ public class Switch : MonoBehaviour
             levelthree.SetActive(false);
             var levelfour = Find("Task4");
             levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
         }
         else if (index == 1)
         {
@@ -80,6 +84,8 @@ public class Switch : MonoBehaviour
             levelthree.SetActive(false);
             var levelfour = Find("Task4");
             levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
         }
         else if (index == 2)
         {
@@ -91,6 +97,8 @@ public class Switch : MonoBehaviour
             levelthree.SetActive(true);
             var levelfour = Find("Task4");
             levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
         }
         else if (index == 3)
         {
@@ -102,10 +110,25 @@ public class Switch : MonoBehaviour
             levelthree.SetActive(false);
             var levelfour = Find("Task4");
             levelfour.SetActive(true);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
+        }
+        else if (index == 4)
+        {
+            var levelone = Find("Task1");
+            levelone.SetActive(false);
+            var leveltwo = Find("Task2");
+            leveltwo.SetActive(false);
+            var levelthree = Find("Task3");
+            levelthree.SetActive(false);
+            var levelfour = Find("Task4");
+            levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(true);
         }
     }
     public void Next() {
-        if (index != 3)
+        if (index != 6)
         {
             index += 1;
         }
@@ -124,6 +147,8 @@ public class Switch : MonoBehaviour
             levelthree.SetActive(false);
             var levelfour = Find("Task4");
             levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
         }
         else if (index == 1)
         {
@@ -135,6 +160,8 @@ public class Switch : MonoBehaviour
             levelthree.SetActive(false);
             var levelfour = Find("Task4");
             levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
         }
         else if (index == 2)
         {
@@ -146,6 +173,8 @@ public class Switch : MonoBehaviour
             levelthree.SetActive(true);
             var levelfour = Find("Task4");
             levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
         }
         else if (index == 3)
         {
@@ -157,8 +186,22 @@ public class Switch : MonoBehaviour
             levelthree.SetActive(false);
             var levelfour = Find("Task4");
             levelfour.SetActive(true);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
         }
-        Debug.Log(index);
+        else if (index == 4)
+        {
+            var levelone = Find("Task1");
+            levelone.SetActive(false);
+            var leveltwo = Find("Task2");
+            leveltwo.SetActive(false);
+            var levelthree = Find("Task3");
+            levelthree.SetActive(false);
+            var levelfour = Find("Task4");
+            levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(true);
+        }
     }
 
     public static GameObject Find(string name)
