@@ -27,23 +27,23 @@ public class Select : MonoBehaviour
                    print(hit.transform.gameObject.GetComponent<WasSelected>());
                    hit.transform.gameObject.GetComponent<WasSelected>().value = true;
                    selected = hit.transform.gameObject;
-                 Transform[] current = selected.GetComponentsInChildren<Transform>(true);
-                RGB = current[1].GetComponent<MeshRenderer>().material.color;
-              for (int i = 1; i < current.Length; i++)
-                 {
+              //   Transform[] current = selected.GetComponentsInChildren<Transform>(true);
+              //  RGB = current[1].GetComponent<MeshRenderer>().material.color;
+              //for (int i = 1; i < current.Length; i++)
+              //   {
                         
-                      current[i].GetComponent<selectedeffect>().enabled = true;
-                    }
+              //        current[i].GetComponent<selectedeffect>().enabled = true;
+              //      }
 
-                }
-                else
-                {
-                   Transform[] current = selected.GetComponentsInChildren<Transform>(true);
-                  for (int i = 1; i < current.Length; i++)                    {
+              //  }
+              //  else
+              //  {
+              //     Transform[] current = selected.GetComponentsInChildren<Transform>(true);
+              //    for (int i = 1; i < current.Length; i++)                    {
                       
-                        current[i].GetComponent<MeshRenderer>().material.color = RGB;
-                        current[i].GetComponent<selectedeffect>().enabled = false;
-                    }
+              //          current[i].GetComponent<MeshRenderer>().material.color = RGB;
+              //          current[i].GetComponent<selectedeffect>().enabled = false;
+              //      }
                     
                 }
             }
