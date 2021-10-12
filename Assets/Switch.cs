@@ -40,6 +40,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(false);
             var levelseven = Find("Task7");
             levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(true);
             var object2 = Find("level3-objects");
@@ -93,6 +95,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(false);
             var levelseven = Find("Task7");
             levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(true);
             var object2 = Find("level3-objects");
@@ -123,6 +127,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(false);
             var levelseven = Find("Task7");
             levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(true);
             var object2 = Find("level3-objects");
@@ -153,6 +159,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(false);
             var levelseven = Find("Task7");
             levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -183,6 +191,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(false);
             var levelseven = Find("Task7");
             levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -213,6 +223,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(false);
             var levelseven = Find("Task7");
             levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -242,6 +254,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(true);
             var levelseven = Find("Task7");
             levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -271,6 +285,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(false);
             var levelseven = Find("Task7");
             levelseven.SetActive(true);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -285,9 +301,39 @@ public class Switch : MonoBehaviour
             object7.SetActive(true);
 
         }
+        else if(index == 7){
+            var levelone = Find("Task1");
+            levelone.SetActive(false);
+            var leveltwo = Find("Task2");
+            leveltwo.SetActive(false);
+            var levelthree = Find("Task3");
+            levelthree.SetActive(false);
+            var levelfour = Find("Task4");
+            levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
+            var levelsix = Find("Task6");
+            levelsix.SetActive(false);
+            var levelseven = Find("Task7");
+            levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(true);
+            var object1 = Find("level1-objects");
+            object1.SetActive(false);
+            var object2 = Find("level3-objects");
+            object2.SetActive(false);
+            var object3 = Find("level4-objects");
+            object3.SetActive(false);
+            var object5 = Find("level5-objects");
+            object5.SetActive(false);
+            var object6 = Find("level6-objects");
+            object6.SetActive(false);
+            var object7 = Find("level7-objects");
+            object7.SetActive(false);
+        }
     }
     public void Next() {
-        if (index != 6)
+        if (index != 7)
         {
             index += 1;
         }
@@ -308,6 +354,12 @@ public class Switch : MonoBehaviour
             levelfour.SetActive(false);
             var levelfive = Find("Task5");
             levelfive.SetActive(false);
+            var levelsix = Find("Task6");
+            levelsix.SetActive(false);
+            var levelseven = Find("Task7");
+            levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(true);
             var object2 = Find("level3-objects");
@@ -332,6 +384,12 @@ public class Switch : MonoBehaviour
             levelfour.SetActive(false);
             var levelfive = Find("Task5");
             levelfive.SetActive(false);
+            var levelsix = Find("Task6");
+            levelsix.SetActive(false);
+            var levelseven = Find("Task7");
+            levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(true);
             var object2 = Find("level3-objects");
@@ -358,6 +416,12 @@ public class Switch : MonoBehaviour
             levelfour.SetActive(false);
             var levelfive = Find("Task5");
             levelfive.SetActive(false);
+            var levelsix = Find("Task6");
+            levelsix.SetActive(false);
+            var levelseven = Find("Task7");
+            levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -384,6 +448,12 @@ public class Switch : MonoBehaviour
             levelfour.SetActive(true);
             var levelfive = Find("Task5");
             levelfive.SetActive(false);
+            var levelsix = Find("Task6");
+            levelsix.SetActive(false);
+            var levelseven = Find("Task7");
+            levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -411,9 +481,11 @@ public class Switch : MonoBehaviour
             var levelfive = Find("Task5");
             levelfive.SetActive(true);
             var levelsix = Find("Task6");
-            levelsix.SetActive(true);
+            levelsix.SetActive(false);
             var levelseven = Find("Task7");
             levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -443,6 +515,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(true);
             var levelseven = Find("Task7");
             levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -472,6 +546,8 @@ public class Switch : MonoBehaviour
             levelsix.SetActive(false);
             var levelseven = Find("Task7");
             levelseven.SetActive(true);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(false);
             var object1 = Find("level1-objects");
             object1.SetActive(false);
             var object2 = Find("level3-objects");
@@ -485,6 +561,36 @@ public class Switch : MonoBehaviour
             var object7 = Find("level7-objects");
             object7.SetActive(true);
 
+        }
+        else if (index == 7){
+            var levelone = Find("Task1");
+            levelone.SetActive(false);
+            var leveltwo = Find("Task2");
+            leveltwo.SetActive(false);
+            var levelthree = Find("Task3");
+            levelthree.SetActive(false);
+            var levelfour = Find("Task4");
+            levelfour.SetActive(false);
+            var levelfive = Find("Task5");
+            levelfive.SetActive(false);
+            var levelsix = Find("Task6");
+            levelsix.SetActive(false);
+            var levelseven = Find("Task7");
+            levelseven.SetActive(false);
+            var leveleight = Find("Task8");
+            leveleight.SetActive(true);
+            var object1 = Find("level1-objects");
+            object1.SetActive(false);
+            var object2 = Find("level3-objects");
+            object2.SetActive(false);
+            var object3 = Find("level4-objects");
+            object3.SetActive(false);
+            var object5 = Find("level5-objects");
+            object5.SetActive(false);
+            var object6 = Find("level6-objects");
+            object6.SetActive(false);
+            var object7 = Find("level7-objects");
+            object7.SetActive(false);
         }
     }
 
