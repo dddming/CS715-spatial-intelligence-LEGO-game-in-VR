@@ -140,10 +140,18 @@ public class myDrag : MonoBehaviour
                     //bricks[z].GetComponent<Collider>().isTrigger = true;
                     cubes[match[z]].GetComponent<MeshRenderer>().enabled = false;
                     cubes[match[z]].tag = "occupied";
-                    if (bricks[z].GetComponent<position>().p == cubes[match[z]].GetComponent<position>().p)
+                    try
                     {
-                        right += 1;
+                        if (bricks[z].GetComponent<position>().p == cubes[match[z]].GetComponent<position>().p)
+                        {
+                            right += 1;
+                        }
                     }
+                    catch
+                    { 
+
+                    }
+                    
                 }
             }
 

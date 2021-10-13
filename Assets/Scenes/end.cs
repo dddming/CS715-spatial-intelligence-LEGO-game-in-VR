@@ -8,8 +8,6 @@ public class end : MonoBehaviour
     GameObject confirm;
     void Start()
     {
-        
-        confirm.SetActive(false);
     }
     void Awake()
     {
@@ -20,10 +18,15 @@ public class end : MonoBehaviour
 
     void Update()
     {
-        cubes = GameObject.FindGameObjectsWithTag("ghostframe");
-        if(cubes.Length == 0)
-        {            
+        cubes = GameObject.FindGameObjectsWithTag("occupied");
+        var fill = FindObjectsOfType<position>().Length - GameObject.FindGameObjectsWithTag("bricks").Length;
+        if (cubes.Length == fill)
+        {
             confirm.SetActive(true);
+        }
+        else
+        {
+            confirm.SetActive(false);
         }
         
     }

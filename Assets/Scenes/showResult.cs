@@ -20,17 +20,27 @@ public class showResult : MonoBehaviour
             score = GameObject.FindWithTag("manager").GetComponent<score>().right;
             GameObject[] occupied = GameObject.FindGameObjectsWithTag("occupied");
             GameObject[] ghostframe = GameObject.FindGameObjectsWithTag("ghostframe");
-            if (score == occupied.Length&&ghostframe.Length == 0)
+            if (score == FindObjectsOfType<position>().Length - GameObject.FindGameObjectsWithTag("bricks").Length)
             {
-                gameObject.GetComponent<UnityEngine.UI.Text>().text = "Congratulations!";
-                gameObject.SetActive(true);
-                
+                var gobject = Find("GUI");
+                var gobject_TEXT = Find("Result");
+                gobject.SetActive(true);
+                gobject_TEXT.GetComponent<UnityEngine.UI.Text>().text = "Congratulations!";
+                gobject_TEXT.SetActive(true);
+                var gobject_close = Find("Close");
+                gobject_close.SetActive(true);
+
+
             }
             else
             {
-                gameObject.GetComponent<UnityEngine.UI.Text>().text = "Try again!";
-                gameObject.SetActive(true);
-                
+                var gobject = Find("GUI");
+                var gobject_TEXT = Find("Result");
+                gobject.SetActive(true);
+                gobject_TEXT.GetComponent<UnityEngine.UI.Text>().text = "Try again!";
+                gobject_TEXT.SetActive(true);
+                var gobject_close = Find("Close");
+                gobject_close.SetActive(true);
             }
 
 
@@ -47,5 +57,20 @@ public class showResult : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public static GameObject Find(string name)
+    {
+        Object[] objs = Resources.FindObjectsOfTypeAll(typeof(GameObject));
+
+        foreach (GameObject obj in objs)
+        {
+            if (obj.name == name)
+            {
+                return obj;
+            }
+        }
+
+        return null;
     }
 }

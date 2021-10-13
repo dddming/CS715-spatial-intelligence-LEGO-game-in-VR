@@ -629,6 +629,9 @@ public class Switch : MonoBehaviour
             var object7 = Find("level7-objects");
             object7.SetActive(false);
         }
+
+        var next_step = Find("Begin");
+        next_step.SetActive(false);
     }
 
     public static GameObject Find(string name)

@@ -26,7 +26,8 @@ public class help : MonoBehaviour
 
     void Update()
     {
-        count = GameObject.FindGameObjectsWithTag("ghostframe").Length + GameObject.FindGameObjectsWithTag("occupied").Length;
+        //count = GameObject.FindGameObjectsWithTag("ghostframe").Length + GameObject.FindGameObjectsWithTag("occupied").Length;
+        count = FindObjectsOfType<position>().Length - GameObject.FindGameObjectsWithTag("bricks").Length;
         gameObject.GetComponent<UnityEngine.UI.Text>().text = GameObject.FindWithTag("manager").GetComponent<score>().right.ToString() + "/" + count.ToString();
     }
 }
