@@ -10,6 +10,7 @@ TagManager:
   - bricks
   - resultText
   - level1
+  - placeholder
   layers:
   - Default
   - TransparentFX

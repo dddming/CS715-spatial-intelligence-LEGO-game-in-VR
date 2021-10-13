@@ -8,7 +8,6 @@ public class Switch : MonoBehaviour
     // Start is called before the first frame update
     public GameObject[] background;
     int index;
-
     float currentTime = 0f;
     float startingTime = 10f;
 
@@ -69,7 +68,8 @@ public class Switch : MonoBehaviour
         }
 
     }
-    public void Previous() { 
+    public void Previous() {
+        GameObject.FindWithTag("manager").GetComponent<score>().right = 0;
         if (index != 0)
         {
             index -= 1;
@@ -351,6 +351,7 @@ public class Switch : MonoBehaviour
         }
     }
     public void Next() {
+        GameObject.FindWithTag("manager").GetComponent<score>().right = 0;
         if (index != 4)
         {
             index += 1;
