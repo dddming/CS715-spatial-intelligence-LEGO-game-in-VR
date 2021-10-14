@@ -107,13 +107,7 @@ public class myDrag : MonoBehaviour
         //GameObject.FindWithTag("resultText").GetComponent<Text>().text = GameObject.FindWithTag("manager").GetComponent<score>().right.ToString() + "/" + count.ToString();
     }
 
-    void move()
-    {
-        if (Input.GetKey(KeyCode.W))
-        {
-            gameObject.transform.Translate(Vector3.forward * Time.deltaTime * 0.5F);
-        }
-    }
+    
 
     void OnMouseUp()
     {
@@ -246,20 +240,20 @@ public class myDrag : MonoBehaviour
 
         if (canRotate)
         {
-            move();
-            if (Input.GetKey(KeyCode.J))
+            
+            if (Input.GetKey(KeyCode.A))
             {
                 transform.Rotate(0, 0.5f, 0);
             }
-            if (Input.GetKey(KeyCode.L))
+            if (Input.GetKey(KeyCode.D))
             {
                 transform.Rotate(0, -0.5f, 0);
             }
-            if (Input.GetKey(KeyCode.I))
+            if (Input.GetKey(KeyCode.W))
             {
                 transform.Rotate(0.5f, 0, 0);
             }
-            if (Input.GetKey(KeyCode.K))
+            if (Input.GetKey(KeyCode.S))
             {
                 transform.Rotate(-0.5f, 0, 0);
             }

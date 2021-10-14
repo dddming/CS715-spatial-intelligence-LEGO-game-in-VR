@@ -107,8 +107,23 @@ public class Select : MonoBehaviour
                     arrow.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y + 0.2f, selected.transform.position.z);
                 }
             }
-            
-            
+            if(Input.GetKey(KeyCode.A))
+            {
+                selected.transform.Rotate(0, 0.5f, 0);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                selected.transform.Rotate(0, -0.5f, 0);
+            }
+            if (Input.GetKey(KeyCode.W))
+            {
+                selected.transform.Rotate(0.5f, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                selected.transform.Rotate(-0.5f, 0, 0);
+            }
+
         }
         
 
