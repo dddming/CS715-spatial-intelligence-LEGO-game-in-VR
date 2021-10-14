@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5065414, g: 0.6186535, b: 0.69199836, a: 1}
+  m_IndirectSpecularColor: {r: 0.50654364, g: 0.61865586, b: 0.69199914, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1753,7 +1753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 1
 --- !u!114 &162401844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3817,7 +3817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 1
 --- !u!1 &304233965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7585583699307386097, guid: 804008e89a5e5437c97b10733c663119, type: 3}
@@ -3835,7 +3835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 3
 --- !u!1 &312857189 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2820512050322339574, guid: 11f20b3dd7ec944268dca006ff7c5f83, type: 3}
@@ -6327,7 +6327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2005358588804415078, guid: daafa5a4304316f4e9b1989cc87cd534, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2038135694091903807, guid: daafa5a4304316f4e9b1989cc87cd534, type: 3}
       propertyPath: m_Enabled
@@ -6524,7 +6524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 2
 --- !u!1 &545883060 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000265386456004136, guid: cef4b9ee9670a41fb8eed8d14e488562, type: 3}
@@ -6594,7 +6594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 2
+  p: 3
 --- !u!1001 &548719913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10084,7 +10084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8456485870810025100, guid: e6dde71b733f7e049a7733e9093ab7a4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8717852805534760487, guid: e6dde71b733f7e049a7733e9093ab7a4, type: 3}
       propertyPath: m_Enabled
@@ -10173,7 +10173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 2
+  p: 3
 --- !u!1 &796782453 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8631897186036143492, guid: 11f20b3dd7ec944268dca006ff7c5f83, type: 3}
@@ -13951,7 +13951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1039164060
 Transform:
   m_ObjectHideFlags: 0
@@ -15281,7 +15281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 2
 --- !u!114 &1141642001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16718,7 +16718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 1
+  p: 2
 --- !u!1 &1235423521 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6097775685624743546, guid: e6dde71b733f7e049a7733e9093ab7a4, type: 3}
@@ -17879,7 +17879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 1
 --- !u!1 &1366404468 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9145345751267162472, guid: 11f20b3dd7ec944268dca006ff7c5f83, type: 3}
@@ -18101,7 +18101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 1
+  p: 2
 --- !u!4 &1392963571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c1ed0a7ccc2279548bae0a26636ea853, type: 3}
@@ -18972,7 +18972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 1
 --- !u!1 &1499600335 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6817461596427166056, guid: 11f20b3dd7ec944268dca006ff7c5f83, type: 3}
@@ -21857,7 +21857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 465167a3bd8b6cf4a9d630367430e411, type: 3}
+  m_Texture: {fileID: 2800000, guid: 588a36d6610184f28bcc62d80db2a2c8, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -22624,7 +22624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3743980108397784359, guid: f6b9e4eca5c6f194ea93432adee49df1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4392402686704497135, guid: f6b9e4eca5c6f194ea93432adee49df1, type: 3}
       propertyPath: m_Enabled
@@ -26320,7 +26320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 3
 --- !u!1 &2026514294 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6392218864574027024, guid: 11f20b3dd7ec944268dca006ff7c5f83, type: 3}
@@ -26444,7 +26444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 1
 --- !u!1 &2042114801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1358023712879501859, guid: 7efe3d3606101441ca0d12346536fd7a, type: 3}
@@ -28101,7 +28101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dda5d158fefd14db45db96a3af2031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: 0
+  p: 2
 --- !u!1001 &2118232950
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,8 +11,8 @@ public class hint : MonoBehaviour
     {
         if (isClick == false)
         {
-            GameObject task = GameObject.Find("Task1");
-            Transform[] cubes = task.GetComponentsInChildren<Transform>(true);
+            //GameObject task = GameObject.FindGameObjectsWithTag("ghostframe");
+            GameObject[] cubes = GameObject.FindGameObjectsWithTag("ghostframe");
             try
             {
                 GameObject selected = GameObject.Find("GameManager").GetComponent<Select>().selected;

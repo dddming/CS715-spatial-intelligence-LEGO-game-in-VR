@@ -352,7 +352,7 @@ public class Switch : MonoBehaviour
     }
     public void Next() {
         GameObject.FindWithTag("manager").GetComponent<score>().right = 0;
-        if (index != 4)
+        if (index != 3)
         {
             index += 1;
         }

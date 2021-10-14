@@ -76,20 +76,22 @@ public class myDrag : MonoBehaviour
                     occupied[i].GetComponent<MeshRenderer>().enabled = true;
                     occupied[i].tag = "ghostframe";
 
-
+                    if (bricks[j].GetComponent<position>().p == occupied[i].GetComponent<position>().p)
+                    {
+                        GameObject.FindWithTag("manager").GetComponent<score>().right -= 1;
+                    }
 
                 }
             }
 
         }
 
-        occupied = GameObject.FindGameObjectsWithTag("occupied");
-        if (GameObject.FindWithTag("manager").GetComponent<score>().right > occupied.Length)
-        {            GameObject.FindWithTag("manager").GetComponent<score>().right -= 1;
+        // occupied = GameObject.FindGameObjectsWithTag("occupied");
+        // if (GameObject.FindWithTag("manager").GetComponent<score>().right > occupied.Length)
+        // {            GameObject.FindWithTag("manager").GetComponent<score>().right -= 1;
 
-        }
+        // }
         //GameObject.FindWithTag("resultText").GetComponent<Text>().text = GameObject.FindWithTag("manager").GetComponent<score>().right.ToString() + "/" + count.ToString();
-
     }
 
     void move()
@@ -140,6 +142,7 @@ public class myDrag : MonoBehaviour
                     //bricks[z].GetComponent<Collider>().isTrigger = true;
                     cubes[match[z]].GetComponent<MeshRenderer>().enabled = false;
                     cubes[match[z]].tag = "occupied";
+                    GameObject.FindWithTag("manager").GetComponent<Select>().selected = GameObject.FindWithTag("manager");
                     try
                     {
                         if (bricks[z].GetComponent<position>().p == cubes[match[z]].GetComponent<position>().p)
