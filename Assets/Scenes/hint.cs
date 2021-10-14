@@ -19,10 +19,19 @@ public class hint : MonoBehaviour
                 Transform[] current = selected.GetComponentsInChildren<Transform>(true);
                 for (int i = 1; i < cubes.Length; i++)
                 {
-                    if (current[1].GetComponent<position>().p == cubes[i].GetComponent<position>().p)
+                    try
                     {
-                        cubes[i].GetComponent<flash>().enabled = true;
+                        if (current[1].GetComponent<position>().p == cubes[i].GetComponent<position>().p)
+                        {
+                            cubes[i].GetComponent<flash>().enabled = true;
+                        }
                     }
+                    catch (System.Exception e)
+                    {
+
+                    }
+
+
 
                 }
             }
