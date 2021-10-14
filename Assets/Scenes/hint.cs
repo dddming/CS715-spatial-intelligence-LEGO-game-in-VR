@@ -17,7 +17,7 @@ public class hint : MonoBehaviour
             {
                 GameObject selected = GameObject.Find("GameManager").GetComponent<Select>().selected;
                 Transform[] current = selected.GetComponentsInChildren<Transform>(true);
-                for (int i = 1; i < cubes.Length; i++)
+                for (int i = 0; i < cubes.Length; i++)
                 {
                     try
                     {
