@@ -56,9 +56,9 @@ public class Select : MonoBehaviour
                 //transform.position.z = transform.position.z - 1;
                 //print(transform.position.z - transform.position.y);
 
-                //transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z );
-                selected.transform.Translate(Vector3.left * Time.deltaTime * 1.5F);
+                //transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z );                
                 selected.transform.Translate(Vector3.back * Time.deltaTime * 1.5F);
+               
             }
             if (Input.GetAxis("Mouse ScrollWheel") > 0)
             {
@@ -66,7 +66,7 @@ public class Select : MonoBehaviour
                 //print(transform.position.z - transform.position.y);
 
                 //transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z );
-                selected.transform.Translate(Vector3.right * Time.deltaTime * 1.5F);
+                //selected.transform.Translate(Vector3.right * Time.deltaTime * 1.5F);
                 selected.transform.Translate(Vector3.forward * Time.deltaTime * 1.5F);
             }
         }
