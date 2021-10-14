@@ -8,7 +8,7 @@ public class Switch : MonoBehaviour
     // Start is called before the first frame update
     public GameObject[] background;
     int index;
-    float currentTime = 0f;
+    public float currentTime = 0f;
     float startingTime = 10f;
 
     public Text countdownText;
@@ -59,11 +59,16 @@ public class Switch : MonoBehaviour
         }
         if (index == 3)
         {
-            currentTime -= 1 * Time.deltaTime;
-            countdownText.text = currentTime.ToString("0");
-            if (currentTime <= 0) {
-                currentTime = 0;
-                background[3].gameObject.SetActive(false);
+            if (currentTime > 0)
+            {
+                background[3].gameObject.SetActive(true);
+                currentTime -= 1 * Time.deltaTime;
+                countdownText.text = currentTime.ToString("0");
+                if (currentTime <= 0)
+                {
+                    currentTime = 0;
+                    background[3].gameObject.SetActive(false);
+                }
             }
         }
 

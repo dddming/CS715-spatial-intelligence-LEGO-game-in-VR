@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 
 public class hint : MonoBehaviour
 {
     private int count;
     
     private bool isClick = false;
+    private bool isPictureAppeared = false;
     public void click()
     {
         if (isClick == false)
         {
+            GameObject task = Find("Task4");
+            if (!isPictureAppeared &&task.activeSelf && GameObject.FindWithTag("placeholder").GetComponent<Switch>().currentTime == 0f)
+            {
+                GameObject.FindWithTag("placeholder").GetComponent<Switch>().currentTime = 3f;
+                isPictureAppeared = true;
+            }
             //GameObject task = GameObject.FindGameObjectsWithTag("ghostframe");
             GameObject[] cubes = GameObject.FindGameObjectsWithTag("ghostframe");
             try
@@ -35,22 +42,12 @@ public class hint : MonoBehaviour
 
 
                 }
-                GameObject task = Find("Task4");
-                    if (task.activeSelf){
-                        GameObject image = Find("ImageM");
-                        image.SetActive(true);
-                        new WaitForSeconds(3);
-                        // image.SetActive(false);
-
-                    }
             }
             catch (System.Exception e)
             {
                 
             }
-                       
-                      
-            //isClick = true;
+     
         }
         else
         {
@@ -70,7 +67,7 @@ public class hint : MonoBehaviour
     }
     public static GameObject Find(string name)
     {
-        Object[] objs = Resources.FindObjectsOfTypeAll(typeof(GameObject));
+        UnityEngine.Object[] objs = Resources.FindObjectsOfTypeAll(typeof(GameObject));
 
         foreach (GameObject obj in objs)
         {

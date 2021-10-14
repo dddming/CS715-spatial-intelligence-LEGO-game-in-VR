@@ -15,8 +15,11 @@ public class Close : MonoBehaviour
             gobject_TEXT.SetActive(false);
             var gobject_close = Find("Close");
             gobject_close.SetActive(false);
-            var next_step = Find("Begin");
-            next_step.SetActive(true);
+            if (!Find("Task4").activeSelf)
+            {
+                var next_step = Find("Begin");
+                next_step.SetActive(true);
+            }
         }
         else {
             var gobject = Find("GUI");
@@ -25,8 +28,11 @@ public class Close : MonoBehaviour
             gobject_TEXT.SetActive(false);
             var gobject_close = Find("Close");
             gobject_close.SetActive(false);
-            var next_step = Find("Begin");
-            next_step.SetActive(true);
+            if (!Find("Task4").activeSelf)
+            {
+                var next_step = Find("Begin");
+                next_step.SetActive(true);
+            }
         }
 
     }
