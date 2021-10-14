@@ -10,13 +10,14 @@ public class Switch : MonoBehaviour
     int index;
     public float currentTime = 0f;
     float startingTime = 10f;
+    GameObject arrow;
 
     public Text countdownText;
     void Start()
     {
         index = 0;
         currentTime = startingTime;
-
+        arrow = GameObject.Find("arrow");
     }
 
     // Update is called once per frame
@@ -356,7 +357,11 @@ public class Switch : MonoBehaviour
         }
     }
     public void Next() {
+        arrow.SetActive(true);
+        arrow.transform.position = new Vector3(999, 999, 999);
+
         GameObject.FindWithTag("manager").GetComponent<score>().right = 0;
+
         if (index != 3)
         {
             index += 1;

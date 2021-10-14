@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Select : MonoBehaviour
 {
+    
     public GameObject selected;
     public Color RGB;
+    GameObject arrow;
     // Start is called before the first frame update
     void Start()
     {
-        
+        selected = GameObject.FindWithTag("manager");
+        arrow = GameObject.Find("arrow");
     }
 
     // Update is called once per frame
@@ -22,9 +25,35 @@ public class Select : MonoBehaviour
             RaycastHit hit;          
             if (Physics.Raycast(ray, out hit))
             {
-               if (hit.transform.gameObject.tag == "bricks")
+               if(hit.transform.gameObject.tag == "table")
                {
-                   print(hit.transform.gameObject.GetComponent<WasSelected>());
+                    if(selected.tag != "table" && selected.tag != "manager")
+                    {
+                        GameObject.Find("arrow").SetActive(false);
+                        selected.GetComponent<Rigidbody>().useGravity = true;
+                        selected.GetComponent<Rigidbody>().isKinematic = false;
+                        selected = hit.transform.gameObject;
+                    }
+
+                   
+               }
+               else if(hit.transform.gameObject.tag == "bricks")
+               {
+                   if(selected != hit.transform.gameObject && selected.tag != "manager" && selected.tag != "table")
+                    {
+                        //GameObject.Find("arrow").transform.position = new Vector3(hit.transform.position.x , hit.transform.position.y + 0.2f, hit.transform.position.z );
+                        selected.GetComponent<Rigidbody>().useGravity = true;
+                        selected.GetComponent<Rigidbody>().isKinematic = false;
+                    }
+                    
+                        hit.transform.gameObject.GetComponent<Rigidbody>().useGravity = false;
+                        hit.transform.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                    
+                    
+
+                    
+                    
+                    print(hit.transform.gameObject.GetComponent<WasSelected>());
                    hit.transform.gameObject.GetComponent<WasSelected>().value = true;
                    selected = hit.transform.gameObject;
               //   Transform[] current = selected.GetComponentsInChildren<Transform>(true);
@@ -51,24 +80,38 @@ public class Select : MonoBehaviour
         }
         if (selected != null)
         {
-            if (Input.GetAxis("Mouse ScrollWheel") < 0)
+            if(selected.gameObject.tag == "bricks")
             {
-                //transform.position.z = transform.position.z - 1;
-                //print(transform.position.z - transform.position.y);
+                if (Input.GetAxis("Mouse ScrollWheel") < 0)
+                {
+                    //transform.position.z = transform.position.z - 1;
+                    //print(transform.position.z - transform.position.y);
+                    //selected.GetComponent<myDrag>().canDrag = false;
+                    //transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z );                
+                    //selected.transform.Translate(Vector3.back * Time.deltaTime * 1.5F);
 
-                //transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z );                
-                selected.transform.Translate(Vector3.back * Time.deltaTime * 1.5F);
-               
-            }
-            if (Input.GetAxis("Mouse ScrollWheel") > 0)
-            {
-                //transform.position.z = transform.position.z - 1;
-                //print(transform.position.z - transform.position.y);
+                    selected.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y ,selected.transform.position.z - Time.deltaTime * 2.5F);
+                    arrow.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y + 0.2f, selected.transform.position.z);
 
-                //transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z );
-                //selected.transform.Translate(Vector3.right * Time.deltaTime * 1.5F);
-                selected.transform.Translate(Vector3.forward * Time.deltaTime * 1.5F);
+
+
+                }
+                if (Input.GetAxis("Mouse ScrollWheel") > 0)
+                {
+                    //transform.position.z = transform.position.z - 1;
+                    //print(transform.position.z - transform.position.y);
+
+                    //transform.position = new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z );
+                    //selected.transform.Translate(Vector3.right * Time.deltaTime * 1.5F);
+                    selected.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y, selected.transform.position.z + Time.deltaTime * 2.5F);
+                    arrow.transform.position = new Vector3(selected.transform.position.x, selected.transform.position.y + 0.2f, selected.transform.position.z);
+                }
             }
+            
+            
         }
+        
+
+
     }
 }

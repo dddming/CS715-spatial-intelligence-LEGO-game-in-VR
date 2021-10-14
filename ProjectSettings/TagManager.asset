@@ -11,6 +11,7 @@ TagManager:
   - resultText
   - level1
   - placeholder
+  - table
   layers:
   - Default
   - TransparentFX
