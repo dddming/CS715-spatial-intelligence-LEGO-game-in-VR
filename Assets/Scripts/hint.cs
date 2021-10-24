@@ -11,15 +11,17 @@ public class hint : MonoBehaviour
     private bool isPictureAppeared = false;
     public void click()
     {
+        
         if (isClick == false)
         {
+            //This part designed for level 4 to reappear target goal for three sec
             GameObject task = Find("Task4");
             if (!isPictureAppeared &&task.activeSelf && GameObject.FindWithTag("placeholder").GetComponent<Switch>().currentTime == 0f)
             {
                 GameObject.FindWithTag("placeholder").GetComponent<Switch>().currentTime = 3f;
                 isPictureAppeared = true;
             }
-            //GameObject task = GameObject.FindGameObjectsWithTag("ghostframe");
+            // General process for flash target location in ghostfrom
             GameObject[] cubes = GameObject.FindGameObjectsWithTag("ghostframe");
             try
             {
@@ -49,21 +51,7 @@ public class hint : MonoBehaviour
             }
      
         }
-        else
-        {
-            //gameObject.SetActive(false);
-            //isClick = false;
-        }
         
-    }
-    void Start()
-    {
-        //count = GameObject.FindGameObjectsWithTag("ghostframe").Length + GameObject.FindGameObjectsWithTag("occupied").Length;
-    }
-
-    void Update()
-    {
-        //gameObject.GetComponent<UnityEngine.UI.Text>().text = GameObject.FindWithTag("manager").GetComponent<score>().right.ToString() + "/" + count.ToString();
     }
     public static GameObject Find(string name)
     {

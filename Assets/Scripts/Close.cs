@@ -6,6 +6,7 @@ public class Close : MonoBehaviour
 {
     public void click()
     {
+        //Close button for feed back gui
         var score = GameObject.FindWithTag("manager").GetComponent<score>().right;
         if (score == FindObjectsOfType<position>().Length - GameObject.FindGameObjectsWithTag("bricks").Length)
         {
@@ -36,6 +37,7 @@ public class Close : MonoBehaviour
         }
 
     }
+    //Create Find function to find inactive item
     public static GameObject Find(string name)
     {
         Object[] objs = Resources.FindObjectsOfTypeAll(typeof(GameObject));

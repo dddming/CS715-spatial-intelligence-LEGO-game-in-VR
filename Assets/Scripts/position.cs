@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class position : MonoBehaviour
 {
+    // track cube location value
     public int p;
 }

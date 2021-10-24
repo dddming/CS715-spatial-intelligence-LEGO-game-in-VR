@@ -8,6 +8,7 @@ public class help : MonoBehaviour
     private bool isClick = false;
     public void click()
     {
+        //Once click help button, Will show correct cube out of target cube. 
         if(isClick == false)
         {            
             gameObject.SetActive(true);
@@ -26,7 +27,7 @@ public class help : MonoBehaviour
 
     void Update()
     {
-        //count = GameObject.FindGameObjectsWithTag("ghostframe").Length + GameObject.FindGameObjectsWithTag("occupied").Length;
+        // Update correct cube number after each move
         count = FindObjectsOfType<position>().Length - GameObject.FindGameObjectsWithTag("bricks").Length;
         gameObject.GetComponent<UnityEngine.UI.Text>().text = GameObject.FindWithTag("manager").GetComponent<score>().right.ToString() + "/" + count.ToString();
     }
