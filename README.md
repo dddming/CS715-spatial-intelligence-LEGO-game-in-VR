@@ -7,10 +7,19 @@ The published version for the window system is shared with google drive: https:/
 
 The mouse-based block game contains four levels, which provide spatial training tasks for users with visualization, mental rotation, spatial perception and spatial working memory. In the first task, participants are given three-view graphs and instructed to grab the cubes and arrange them in the appropriate spot in the ghost frame. The second assignment requires participants to practise mental rotation by mentally rotating the figure 90 degrees counterclockwise and dragging the cubes presented to fill in the 1x1x5 ghost frame. Participants may proceed to the next assignment if they fill the ghost frame with cubes. When participants arrive at the third task, they will see an unfurled huge figure with four cubes and must mentally fold the presented figure. The last exercise is designed to strengthen participants’ spatial working memory by presenting them with a model of six coloured cubes for 10 seconds and asking them to reconstruct the model. The final task’s clue is distinct from the others. When participants activated the ”hint” button, they could continue to look at the graph for an additional three seconds.
 
-Here is a snapshot of the game:
+Here are snapshots of the game:
 
+**Before Start：**
 
 ![image](https://user-images.githubusercontent.com/49866359/138580134-54d91ecf-43b5-4dab-9bd5-645790630114.png)
+
+**After Complete task:**
+
+![anaminator](https://user-images.githubusercontent.com/49866359/138580535-88a4fd95-c884-46c6-893f-12fa13113c56.PNG)
+
+**Next Level button will occur after close animation:**
+
+![image](https://user-images.githubusercontent.com/49866359/138580523-f6b90095-26ec-40e9-a8ba-7d84f2e22628.png)
 
 * "Help" button - provided the proportion of accurate positions in the overall number of correct positions. For instance, if the user has five cubes in the right location in the ghost frame and the total number of cubes placed in the ghost frame is six, the Help button will display "5/6".
 * "Hint" button - the cube’s corresponding location in the ghost frame flashes when the users select the cubes. 
