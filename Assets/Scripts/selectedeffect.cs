@@ -2,6 +2,13 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
+
+
+
+//**********************************************************************************************************
+// This script is not used now
+// It is designed to render the selected cube in a different way, now has been repaced by arrow temperally
+//**********************************************************************************************************
 public class selectedeffect : MonoBehaviour
 {
     public float t = 0;

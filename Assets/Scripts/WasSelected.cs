@@ -4,6 +4,5 @@ using UnityEngine;
 
 public class WasSelected : MonoBehaviour
 {
-    public bool value = false;
-    
+    public bool value = false;    
 }

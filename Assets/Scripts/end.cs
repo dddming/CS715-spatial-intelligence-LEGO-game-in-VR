@@ -6,16 +6,13 @@ public class end : MonoBehaviour
 {
     GameObject[] cubes;
     GameObject confirm;
-    void Start()
-    {
-    }
+
+    //Pre-locate hidden object
     void Awake()
     {
         confirm = GameObject.Find("ConfirmButton");
     }
-
-
-
+    //Show the confirm button if user finished the work
     void Update()
     {
         cubes = GameObject.FindGameObjectsWithTag("occupied");

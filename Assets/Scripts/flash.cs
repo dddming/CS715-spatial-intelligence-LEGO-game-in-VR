@@ -11,7 +11,7 @@ public class flash : MonoBehaviour
         BoxColliderClick = gameObject.GetComponent<MeshRenderer>();
     }
 
-
+    //Flash the responding ghostframe by enabling/disabling the MeshRenderer, last for 3.5 second.
     void Update()
     {
         if(shake <= 3.5)

@@ -7,12 +7,7 @@ public class showResult : MonoBehaviour
     public int score;
     private bool isClick = false;
 
-    void Start()
-    {
-        //GameObject.FindWithTag("manager").GetComponent<score>().right;
-        //GameObject[] occupied = GameObject.FindGameObjectsWithTag("occupied");
-    }
-
+    //Show the feedback of the game, after user clicked the confirm button
     public void click()
     {
         if (isClick == false)
@@ -29,8 +24,6 @@ public class showResult : MonoBehaviour
                 gobject_TEXT.SetActive(true);
                 var gobject_close = Find("Close");
                 gobject_close.SetActive(true);
-
-
             }
             else
             {
@@ -42,27 +35,13 @@ public class showResult : MonoBehaviour
                 var gobject_close = Find("Close");
                 gobject_close.SetActive(true);
             }
-
-
-            //isClick = true;
-        }
-        else
-        {
-            //gameObject.SetActive(false);
-            //isClick = false;
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public static GameObject Find(string name)
     {
         Object[] objs = Resources.FindObjectsOfTypeAll(typeof(GameObject));
-
         foreach (GameObject obj in objs)
         {
             if (obj.name == name)
@@ -70,7 +49,6 @@ public class showResult : MonoBehaviour
                 return obj;
             }
         }
-
         return null;
     }
 }

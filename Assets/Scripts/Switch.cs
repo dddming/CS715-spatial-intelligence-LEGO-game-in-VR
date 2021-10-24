@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Switch : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject[] background;
     int index;
     public float currentTime = 0f;
@@ -13,6 +12,7 @@ public class Switch : MonoBehaviour
     GameObject arrow;
 
     public Text countdownText;
+    //Initial variables,timer,and pre-locate hidden objects 
     void Start()
     {
         index = 0;
@@ -20,10 +20,9 @@ public class Switch : MonoBehaviour
         arrow = GameObject.Find("arrow");
     }
 
-    // Update is called once per frame
     void Update()
     {
-
+        //Initiate game stae
         if (index == 0) {
             background[0].gameObject.SetActive(true);
             var levelone = Find("Task1");
@@ -58,6 +57,7 @@ public class Switch : MonoBehaviour
             object7.SetActive(false);
 
         }
+        //end with the fourth task 
         if (index == 3)
         {
             if (currentTime > 0)
@@ -74,19 +74,20 @@ public class Switch : MonoBehaviour
         }
 
     }
+    //**********************************************************************************************************
+    // This function is not used now
+    // It is designed to switch back to previous tasks, which is currently disabled in current version
+    //**********************************************************************************************************
     public void Previous() {
         GameObject.FindWithTag("manager").GetComponent<score>().right = 0;
         if (index != 0)
         {
             index -= 1;
         }
-
-
         for (int i = 0; i<background.Length; i++) {
             background[i].gameObject.SetActive(false);
             background[index].gameObject.SetActive(true);
         }
-
         if (index == 0)
         {
             var levelone = Find("Task1");
@@ -119,7 +120,6 @@ public class Switch : MonoBehaviour
             object6.SetActive(false);
             var object7 = Find("level7-objects");
             object7.SetActive(false);
-
         }
         else if (index == 1)
         {
@@ -356,17 +356,16 @@ public class Switch : MonoBehaviour
             object7.SetActive(false);
         }
     }
+    //By clicking the next task button, clear all the used elements and switch to newx task
     public void Next() {
         arrow.SetActive(true);
         arrow.transform.position = new Vector3(999, 999, 999);
-
         GameObject.FindWithTag("manager").GetComponent<score>().right = 0;
-
+        //Stop by fourth task
         if (index != 3)
         {
             index += 1;
         }
-
         for (int i = 0; i < background.Length; i++) {
             background[i].gameObject.SetActive(false);
             background[index].gameObject.SetActive(true);
